@@ -1,0 +1,6 @@
+devid=KingHU3BR
+devtitle=KingHU3BR
+gameid=just-another-zombie-wave-defense
+gametitle=Just Another Zombie Wave Defense
+version=0.1
+icon=metadata/icon.png
