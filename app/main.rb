@@ -1,5 +1,20 @@
 $gtk.reset
 
+colors = {
+  RED = [255, 0, 0, 255],
+  GREEN = [0, 255, 0, 255],
+  BLUE = [0, 0, 255, 255],
+  CYAN = [0, 255, 255, 255],
+  PINK = [255, 0, 255, 255],
+  YELLOW = [255, 255, 0, 255],
+  ORANGE = [255, 150, 0, 255]
+  BLACK = [0, 0, 0, 255],
+  WHITE = [255, 255, 255, 255],
+  GRAY = [128, 128, 128, 255],
+  DARK_GRAY = [90, 90, 90, 255],
+  LIGHT_GRAY = [190, 190, 190, 255]
+};
+
 class Enemy
   def initialize args
     @args = args
