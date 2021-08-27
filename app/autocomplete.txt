@@ -1,4 +1,0 @@
-tick_count
-__thrash_count__
-entity_size
-game
