@@ -1,5 +1,7 @@
-
-
+# Adapted from https://github.com/DSchaedler/dyn_light/blob/main/app/geometry.rb
+# Original author: D Schaedler (https://github.com/DSchaedler)
+# MIT License
+# Copyright (c) 2021 D Schaedler
 
 DEG_TO_RAD = Math::PI / 180
 
