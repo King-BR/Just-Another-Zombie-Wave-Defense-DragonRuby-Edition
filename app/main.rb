@@ -1,5 +1,5 @@
 $gtk.reset
-
+=begin
 class Enemy
   def initialize args
     @args = args
@@ -30,6 +30,11 @@ class Enemy
     end
   end
 
+  def collision
+    @args.state.enemies.each do |e|
+    end
+  end
+
   def render
     # Debug sprite position
     #@args.outputs.solids << [@x - @entity_size/2, @y - @entity_size/2, @entity_size, @entity_size, *@args.state.colors.GREEN];
@@ -42,14 +47,21 @@ class Enemy
       h: @entity_size, 
       path: 'sprites/circle/green.png'
     };
+    
+    @args.outputs.labels << {
+      x: @x - 12 - @entity_size/2,
+      y: @y - 5 - @entity_size/2,
+      text: "#{@x} #{@y}"
+    };
   end
 
   def tick player_x, player_y
+    collision
     pursuePlayer player_x, player_y;
     render;
   end
 end
-
+=end
 
 class Game
   def initialize args
